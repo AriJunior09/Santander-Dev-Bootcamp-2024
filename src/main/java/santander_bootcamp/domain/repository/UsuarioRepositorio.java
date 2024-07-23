@@ -6,4 +6,5 @@ import santander_bootcamp.domain.model.Usuario;
 
 @Repository
 public interface UsuarioRepositorio extends JpaRepository<Usuario, Long>{
+    boolean existsByNumeroConta(String numeroConta);
 }
