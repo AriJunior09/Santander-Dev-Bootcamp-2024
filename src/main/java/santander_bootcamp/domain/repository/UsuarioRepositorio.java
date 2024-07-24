@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import santander_bootcamp.domain.model.Usuario;
 
 @Repository
-public interface UsuarioRepositorio extends JpaRepository<Usuario, Long>{
-    boolean existsByNumeroConta(String numeroConta);
+public interface UsuarioRepositorio extends JpaRepository<Usuario, Long> {
+    boolean existsByContaNumeroConta(String numeroConta);
 }

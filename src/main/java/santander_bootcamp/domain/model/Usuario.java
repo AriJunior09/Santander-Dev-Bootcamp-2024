@@ -1,7 +1,6 @@
 package santander_bootcamp.domain.model;
 
 import jakarta.persistence.*;
-
 import java.util.List;
 
 @Entity(name = "tb_usuario")

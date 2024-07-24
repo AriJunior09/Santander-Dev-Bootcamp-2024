@@ -1,7 +1,6 @@
 package santander_bootcamp.domain.model;
 
 import jakarta.persistence.*;
-
 import java.math.BigDecimal;
 
 @Entity(name = "tb_conta")
@@ -12,7 +11,7 @@ public class Conta {
     private Long id;
 
     @Column(unique = true)
-    private String numero;
+    private String numeroConta;
 
     private String agencia;
 
@@ -30,12 +29,12 @@ public class Conta {
         this.id = id;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumeroConta() {
+        return numeroConta;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumeroConta(String numeroConta) {
+        this.numeroConta = numeroConta;
     }
 
     public String getAgencia() {
