@@ -27,6 +27,11 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "santander_bootcamp.Application"
+	}
+}
 
 tasks.named('test') {
 	useJUnitPlatform()

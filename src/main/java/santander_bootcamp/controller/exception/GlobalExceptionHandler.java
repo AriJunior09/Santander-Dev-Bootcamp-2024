@@ -1,4 +1,4 @@
-package santander_bootcamp.domain.controller.exception;
+package santander_bootcamp.controller.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

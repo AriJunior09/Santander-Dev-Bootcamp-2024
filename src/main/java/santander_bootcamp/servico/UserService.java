@@ -1,6 +1,6 @@
-package santander_bootcamp.domain.servico;
+package santander_bootcamp.servico;
 
-import santander_bootcamp.domain.model.Usuario;
+import santander_bootcamp.model.Usuario;
 
 public interface UserService {
     Usuario findById(Long id);

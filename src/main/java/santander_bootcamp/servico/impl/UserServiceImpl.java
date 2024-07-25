@@ -1,9 +1,9 @@
-package santander_bootcamp.domain.servico.impl;
+package santander_bootcamp.servico.impl;
 
 import org.springframework.stereotype.Service;
-import santander_bootcamp.domain.model.Usuario;
-import santander_bootcamp.domain.repository.UsuarioRepositorio;
-import santander_bootcamp.domain.servico.UserService;
+import santander_bootcamp.model.Usuario;
+import santander_bootcamp.repository.UsuarioRepositorio;
+import santander_bootcamp.servico.UserService;
 
 import java.util.NoSuchElementException;
 

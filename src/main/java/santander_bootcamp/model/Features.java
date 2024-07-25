@@ -1,4 +1,4 @@
-package santander_bootcamp.domain.model;
+package santander_bootcamp.model;
 
 import jakarta.persistence.Entity;
 

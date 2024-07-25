@@ -1,10 +1,11 @@
-package santander_bootcamp.domain.controller;
+package santander_bootcamp.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import santander_bootcamp.domain.model.Usuario;
-import santander_bootcamp.domain.servico.UserService;
+import santander_bootcamp.model.Usuario;
+import santander_bootcamp.servico.UserService;
+
 import java.net.URI;
 
 @RestController
