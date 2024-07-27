@@ -1,5 +1,7 @@
-# Santander Dev Bootcamp 2024
-Java RESTful API - Criada para o Santander Bootcamp Dev Backend 2024
+# Santander Bootcamp - Java API RESTful
+## Descrição do Projeto
+
+Este projeto é uma API RESTful desenvolvida em Java utilizando o framework Spring Boot. A API permite a gestão de usuários, cartões, contas, features e notícias. O projeto foi desenvolvido como parte do Santander Bootcamp 2024 - Backend com Java.
 
 ## Diagrama de Classes
 
@@ -40,3 +42,183 @@ classDiagram
     Usuario "1" *-- "N" Feature
     Usuario "1" *-- "N" Noticia
 ```
+
+
+
+## Tecnologias Utilizadas
+
+- Java 17
+- Spring Boot 3.3.1
+- Spring Data JPA
+- PostgreSQL
+- Maven
+- Gradle (opcional)
+
+## Funcionalidades
+
+- **Usuários**
+  - Consultar usuário por ID
+  - Criar novo usuário
+
+- **Cartões**
+  - Consultar cartão por ID
+  - Criar novo cartão
+
+- **Contas**
+  - Consultar conta por ID
+  - Criar nova conta
+
+- **Features**
+  - Consultar feature por ID
+  - Criar nova feature
+
+- **Notícias**
+  - Consultar notícia por ID
+  - Criar nova notícia
+
+## Como Executar o Projeto
+
+### Pré-requisitos
+
+- Java 17
+- Maven ou Gradle
+- PostgreSQL
+
+### Passo a Passo
+
+#### Usando Maven
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/seu-usuario/santander-bootcamp-api.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```bash
+    cd santander-bootcamp-api
+    ```
+
+3. Configure o banco de dados PostgreSQL no arquivo `application-prod.yml`:
+
+    ```yaml
+    spring:
+      profiles:
+        active: prod
+      datasource:
+        url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+        username: ${PGUSER}
+        password: ${PGPASSWORD}
+      jpa:
+        hibernate:
+          ddl-auto: create
+    ```
+
+4. Compile e execute o projeto:
+
+    ```bash
+    mvn spring-boot:run
+    ```
+
+5. Acesse a API em `http://localhost:8080`.
+
+#### Usando Gradle
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/seu-usuario/santander-bootcamp-api.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```bash
+    cd santander-bootcamp-api
+    ```
+
+3. Configure o banco de dados PostgreSQL no arquivo `application-prod.yml`:
+
+    ```yaml
+    spring:
+      profiles:
+        active: prod
+      datasource:
+        url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+        username: ${PGUSER}
+        password: ${PGPASSWORD}
+      jpa:
+        hibernate:
+          ddl-auto: create
+    ```
+
+4. Compile e execute o projeto:
+
+    ```bash
+    ./gradlew bootRun
+    ```
+
+5. Acesse a API em `http://localhost:8080`.
+
+## Endpoints da API
+
+### Usuários
+
+- **GET /users/{id}**
+  - Retorna um usuário por ID.
+
+- **POST /users**
+  - Cria um novo usuário.
+
+### Cartões
+
+- **GET /cartoes/{id}**
+  - Retorna um cartão por ID.
+
+- **POST /cartoes**
+  - Cria um novo cartão.
+
+### Contas
+
+- **GET /contas/{id}**
+  - Retorna uma conta por ID.
+
+- **POST /contas**
+  - Cria uma nova conta.
+
+### Features
+
+- **GET /features/{id}**
+  - Retorna uma feature por ID.
+
+- **POST /features**
+  - Cria uma nova feature.
+
+### Notícias
+
+- **GET /noticias/{id}**
+  - Retorna uma notícia por ID.
+
+- **POST /noticias**
+  - Cria uma nova notícia.
+
+## Estrutura do Projeto
+
+```plaintext
+santander_bootcamp
+├── controller
+│   └── UserController.java
+├── model
+│   ├── BaseItem.java
+│   ├── Cartao.java
+│   ├── Conta.java
+│   ├── Features.java
+│   ├── Noticias.java
+│   └── Usuario.java
+├── repository
+│   └── UsuarioRepositorio.java
+├── servico
+│   ├── impl
+│   │   └── UserServiceImpl.java
+│   └── UserService.java
+└── Application.java
