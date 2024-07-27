@@ -91,13 +91,13 @@ classDiagram
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/santander-bootcamp-api.git
+    git clone https://github.com/AriJunior09/Santander-Dev-Bootcamp-2024.git
     ```
 
 2. Navegue até o diretório do projeto:
 
     ```bash
-    cd santander-bootcamp-api
+    cd Santander-Dev-Bootcamp-2024
     ```
 
 3. Configure o banco de dados PostgreSQL no arquivo `application-prod.yml`:
@@ -128,13 +128,13 @@ classDiagram
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/santander-bootcamp-api.git
+    git clone https://github.com/AriJunior09/Santander-Dev-Bootcamp-2024.git
     ```
 
 2. Navegue até o diretório do projeto:
 
     ```bash
-    cd santander-bootcamp-api
+    cd Santander-Dev-Bootcamp-2024
     ```
 
 3. Configure o banco de dados PostgreSQL no arquivo `application-prod.yml`:
@@ -222,3 +222,27 @@ santander_bootcamp
 │   │   └── UserServiceImpl.java
 │   └── UserService.java
 └── Application.java
+
+```
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
+
+## Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+
+
+### Autor
+Este projeto foi desenvolvido por **Ari Junior**
+
+- **LinkedIn:** https://www.linkedin.com/in/arijunior09/
+- **GitHub:** https://github.com/AriJunior09
+
+### Recursos do Spring
+
+- **Documentação do Spring Boot:** [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
+- **Documentação do Spring Data JPA:** [https://spring.io/projects/spring-data-jpa](https://spring.io/projects/spring-data-jpa)
+- **Guia do Spring Framework:** [https://spring.io/guides](https://spring.io/guides)
+- **Documentação do Spring Security:** [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)
+- **Documentação do Spring Web:** [https://spring.io/guides/gs/rest-service/](https://spring.io/guides/gs/rest-service/)
+- **Documentação do Spring Boot OpenAPI:** [https://springdoc.org/](https://springdoc.org/)
